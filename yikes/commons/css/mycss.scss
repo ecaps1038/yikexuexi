@@ -1,0 +1,114 @@
+//页面撑开头部样式
+.content {
+		padding-top: var(--status-bar-height);
+	}
+
+//头部公用样式
+.top-bar{
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:88rpx;
+	padding-top: var(--status-bar-height);
+	display: flex;
+	// background:rgba(255,255,255,0.96);
+	// border-bottom:1px solid $uni-border-color;
+	.top-bar-left{
+		//border: 1px solid red;
+		padding-left: $uni-spacing-col-base;
+		.my-img{
+			margin-right: 76rpx;
+		}
+		image{
+			margin-top: 10rpx;
+			width:68rpx;
+			height:68rpx;
+			border-radius:16rpx;
+		}
+		.back-img{
+			margin-top: 21rpx;
+			width: 26rpx;
+			height: 46rpx;
+		}
+		.text{
+			font-size:$uni-font-size-lg;
+			font-weight:500;
+			color:$uni-text-color;
+			line-height:88rpx;
+		}
+	}
+	.top-bar-center{
+		flex:auto;
+		text-align: center;
+		//border: 1px solid red;
+		.logo{
+			padding-top:19rpx ;
+			width:88rpx;
+			height: 42rpx;
+		}
+		.title{
+			
+		}
+	}
+	.top-bar-right{
+		//border: 1px solid #000;
+		//background: #eee;
+		.search{
+			width: 88rpx;
+			height: 88rpx;
+			display: inline-block;
+			//border: 1px solid red;
+		}
+		.add{
+			width: 88rpx;
+			height: 88rpx;
+			padding-right: 14rpx;
+			display: inline-block;
+			//border: 1px solid red;
+		}
+		.text{
+			font-size:$uni-font-size-lg;
+			font-weight:500;
+			color:$uni-text-color;
+			line-height:88rpx;
+			//background: #aaa;
+			padding-right: $uni-spacing-col-base;
+		}
+		image{
+			padding: 18rpx 0 0 18rpx;
+			width: 52rpx;
+			height: 52rpx;
+		}
+		.more-img{
+			height: 88rpx;
+			padding-top: 10rpx;
+			padding-right: $uni-spacing-col-base;
+			image{
+				width: 52rpx;
+				height: 12rpx;
+			}
+		}
+	}
+}
+//底部样式
+.bottom-bar{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 90rpx;
+	padding-top: 10rpx;
+	padding-bottom: var(--status-bar-height);
+	//background-color: rgba(255,255,255,0.96);
+}
+
+//btn1样式
+.btn1{
+		text-align: center;
+		line-height: 80rpx;
+		font-size: $uni-font-size-lg;
+		color: $uni-text-color;
+		height:80rpx;
+		border-radius:$uni-border-radius-sm;
+	}
